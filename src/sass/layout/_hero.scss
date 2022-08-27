@@ -1,0 +1,122 @@
+.hero {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 14px;
+  }
+}
+
+.hero-container {
+  width: 320px;
+  display: flex;
+  position: relative;
+
+  @media screen and (min-width: 1280) {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hero__content {
+  @media screen and (min-width: 768px) {
+    max-width: calc(100% - 320px);
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 502px;
+    padding-top: 160px;
+  }
+}
+
+.hero__title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 28px;
+  line-height: calc(38 / 28);
+  margin-bottom: 28px;
+  margin-top: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 44px;
+    width: 500px;
+    font-size: 42px;
+    line-height: calc(50 / 42);
+  }
+}
+
+.hero__text {
+  font-family: Roboto;
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+  text-align: left;
+  vertical-align: top;
+  /*word-spacing: -2px;*/
+  margin-bottom: 28px;
+  margin-top: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
+
+.hero__button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--primary-text-color);
+  background-color: var(--accent-green-color);
+  border-radius: 30px;
+  border-color: var(--accent-green-color);
+  border-style: solid;
+  padding: 6px 18px;
+  min-width: 62px;
+  text-align: center;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  background-color: #b5ff00;
+}
+
+.hero-picture {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url(../images/hero/Ellipse\ 11hero-ellipse@1x.png);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/Ellipse\ 11hero-ellipse@2x.png);
+  }
+
+  position: absolute;
+  top: 149px;
+  left: 368px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 320px;
+    width: 320px;
+  }
+
+  &__img {
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    top: 14px;
+    left: 22px;
+  }
+}
