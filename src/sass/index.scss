@@ -1,9 +1,25 @@
-@import './common';
-@import './header';
-@import './hero';
-@import './offerings';
-@import './favorites';
-@import './customers-say';
-@import './subscribe';
-@import './footer';
+@import './utils/var';
+
+@import './base/common';
+
+@import './utils/placeholder';
+@import './base/container';
+@import './base/section';
+@import './utils/visually-hidden';
+
+@import './components/logo';
+// @import './components/mobile-menu';
+@import './components/form';
+@import './components/button';
+@import './components/section-title';
+@import './components/navigation';
+// @import './components/modal';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/offerings';
+@import './layout/favorites';
+@import './layout/reviews';
+@import './layout/subscribe';
+@import './layout/footer';
 
