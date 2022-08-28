@@ -107,18 +107,28 @@
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
-
-  background-image: url(../images/hero/Ellipse\ 11hero-ellipse@1x.png);
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/hero/Ellipse\ 11hero-ellipse@2x.png);
-  }
-
   position: absolute;
   top: 149px;
   left: 400px;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/Ellipse\ 11hero-ellipse@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/Ellipse\ 11hero-ellipse@2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/hero/Ellipse\ 12hero-ellipse@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/Ellipse\ 12hero-ellipse@2x.png);
+    }
+  }
 
   @media screen and (max-width: 767px) {
     display: none;
