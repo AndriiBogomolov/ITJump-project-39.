@@ -17,6 +17,9 @@
   display: flex;
   position: relative;
 
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
   @media screen and (min-width: 768px) {
     width: 744px;
   }
@@ -209,6 +212,4 @@
       left: 0;
     }
   }
-}
-.hero-picture:hover {
 }
