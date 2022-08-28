@@ -2,16 +2,14 @@
   padding-top: 60px;
   padding-bottom: 50px;
 
-  @media screen and (min-width: 1280px) {
+  /* @media screen and (min-width: 1280px) {
     padding-top: 159px;
-  }
+  }*/
 }
 
 .hero-container {
-  width: 320px;
+  --picture-box-width: 320px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
 
   @media screen and (min-width: 1280) {
@@ -22,10 +20,11 @@
 
 .hero__content {
   @media screen and (min-width: 768px) {
-    max-width: calc(100% - 320px);
+    max-width: calc(100% - var(--picture-box-width));
   }
   @media screen and (min-width: 1280px) {
     max-width: 502px;
+    padding-top: 159px;
   }
 }
 
@@ -38,11 +37,11 @@
   line-height: calc(38 / 28);
   margin-bottom: 28px;
   margin-top: 0;
-
+  /*
   @media screen and (min-width: 380px) {
     width: 280px;
     padding-right: 14px;
-  }
+  }*/
 
   @media screen and (min-width: 768px) {
     margin-bottom: 44px;
@@ -53,7 +52,8 @@
   @media screen and (min-width: 1280px) {
     font-size: 48px;
     line-height: calc(58 / 48);
-    width: 502px;
+    width: 100%;
+    /*width: 502px;*/
   }
 }
 
@@ -68,10 +68,10 @@
   /*word-spacing: -2px;*/
   margin-bottom: 28px;
   margin-top: 0;
-
+  /*
   @media screen and (min-width: 380px) {
     width: 266px;
-  }
+  }*/
 
   @media screen and (min-width: 768px) {
     width: 336px;
@@ -79,7 +79,8 @@
     line-height: calc(24 / 16);
   }
   @media screen and (min-width: 1280px) {
-    width: 502px;
+    width: 100%;
+    /*width: 502px;*/
   }
 }
 
@@ -104,10 +105,10 @@
 }
 
 .hero-picture {
-  background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
+  background-position: inherit;
   top: 149px;
   left: 400px;
 
@@ -159,4 +160,6 @@
       left: 26px;
     }
   }
+}
+.hero-picture:hover {
 }
