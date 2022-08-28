@@ -1,0 +1,100 @@
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__overlay {
+    max-width: 1600px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/footer/footer-mobile@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/footer/footer-mobile@2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/footer/footer-tablet@1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/footer/footer-tablet@2x.jpg);
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/footer/footer-desk@1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/footer/footer-tablet@2x.jpg);
+      }
+    }
+  }
+
+  &-figuration {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    width: 103px;
+    height: 42px;
+    border: 0.854167px solid;
+    border-color: var(--accent-dark-green);
+    border-radius: 30px;
+    background: none;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+
+    cursor: pointer;
+  }
+  &__button:hover,
+  &__button:focus {
+    background-color: var(--yellow-color);
+  }
+}
+
+.footer-inform {
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__itam {
+  }
+  &__link {
+    color: var(--accent-dark-green);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  &__copyright {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+.subscribe__privacy {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  margin-top: 12px;
+}
