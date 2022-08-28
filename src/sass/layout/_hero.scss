@@ -14,13 +14,13 @@
   position: relative;
 
   @media screen and (min-width: 768px) {
-    margin-left: 0;
-    margin-right: 0;
+    width: 744px;
   }
 
   @media screen and (min-width: 1280) {
-    align-items: center;
-    justify-content: space-between;
+    width: 1288px;
+    /*align-items: center;
+    justify-content: space-between;*/
   }
 }
 
