@@ -1,0 +1,21 @@
+.site-nav {
+  display: flex;
+  gap: 28px;
+  &__link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.17;
+
+    color: var(--primary-text-color);
+  }
+  &__link--current {
+    color: var(--accent-green-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.17;
+    @media screen and (min-width: 1280px) {
+      font-weight: 700;
+    }
+  }
+}

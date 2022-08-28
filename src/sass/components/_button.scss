@@ -1,0 +1,29 @@
+.header__button {
+  width: 100px;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 28px;
+  padding: 6px 17px 5px 16px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--accent-green-color);
+  cursor: pointer;
+}
+.mobile-menu__button {
+  border: none;
+  background-color: var(---header-background-color);
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &.close {
+    position: absolute;
+    padding: 0px;
+    top: 4px;
+    right: 4px;
+  }
+}
