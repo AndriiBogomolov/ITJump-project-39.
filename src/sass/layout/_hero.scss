@@ -2,10 +2,14 @@
   padding-top: 60px;
   padding-bottom: 50px;
   position: relative;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 
-  /* @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 159px;
-  }*/
+  }
 }
 
 .hero__container {
@@ -18,7 +22,7 @@
   }
 
   @media screen and (min-width: 1280) {
-    width: 1288px;
+    width: 1240px;
     /*align-items: center;
     justify-content: space-between;*/
   }
@@ -34,7 +38,6 @@
   @media screen and (min-width: 1280px) {
     max-width: 502px;
     /*margin-right: 761px;*/
-    margin-top: 159px;
   }
 }
 
@@ -42,7 +45,7 @@
   color: var(--primary-text-color);
   font-weight: 700;
   font-family: Roboto;
-  font-style: Bold;
+  font-weight: bold;
   font-size: 28px;
   line-height: calc(38 / 28);
   margin-bottom: 28px;
@@ -121,7 +124,7 @@
   position: absolute;
   background-position: inherit;
   top: 89px;
-  left: 400px;
+  left: 368px;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/hero/Ellipse\ 11hero-ellipse@1x.png);
@@ -153,7 +156,7 @@
   @media screen and (min-width: 1280px) {
     width: 580px;
     height: 580px;
-    top: 14px;
+    top: -145px;
     left: 640px;
   }
 
@@ -163,7 +166,7 @@
 
     position: absolute;
     top: 14px;
-    left: 22px;
+    left: 16px;
 
     @media screen and (min-width: 1280px) {
       top: 26px;
