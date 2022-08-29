@@ -1,0 +1,90 @@
+<section class="section__offerings">
+  <div class="container container__offerings">
+    <picture>
+      <source
+        srcset="
+          ./images/offerings/apple-desk@1x.webp 1x,
+          ./images/offerings/apple-desk@2x.webp 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/offerings/apple-desk@1x.png 1x,
+          ./images/offerings/apple-desk@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./images/offerings/apple-group-tablet@1x.webp 1x,
+          ./images/offerings/apple-group-tablet@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/offerings/apple-group-tablet@1x.png 1x,
+          ./images/offerings/apple-group-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/offerings/Apple-mobile@1x.webp 1x,
+          ./images/offerings/Apple-mobile@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/offerings/Apple-mobile@1x.png 1x,
+          ./images/offerings/Apple-mobile@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        src="./images/offerings/Apple-mobile@1x.png"
+        alt="Apple"
+        class="offerings__img"
+      />
+    </picture>
+    <div>
+      <h2 class="section-title offerings__title">
+        What’s Special About Our Offerings
+      </h2>
+      <p class="offerings__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <ul class="offerings__list">
+        <li class="offerings__item offerings__item--rocket">
+          <h3 class="offerings__subtitle">Fasest Delivery</h3>
+          <p class="offerings__description offerings__description--size">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+        <li class="offerings__item offerings__item--touch">
+          <h3 class="offerings__subtitle">Easy to order</h3>
+          <p class="offerings__description offerings__description--size">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+      <button type="button" class="offerings__button" data-modal-open>
+        Order Now
+      </button>
+      <a href="#" class="offerings__link"
+        ><span class="offerings__link_text">Read More</span
+        ><svg width="13" height="13">
+          <use href="./images/sprite-icons.svg#icon-read-more-arrow"></use></svg
+      ></a>
+    </div>
+  </div>
+</section>
