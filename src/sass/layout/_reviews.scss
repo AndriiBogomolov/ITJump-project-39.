@@ -1,0 +1,150 @@
+.reviews {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    background-image: url('../images/reviews-images/Rectangle701-mobile@1x.png');
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/reviews-images/Rectangle701-mobile@2x.png');
+    }
+
+  &__item{
+    background: #FFFFFF;
+    border-radius: 0px 30px 30px 30px;
+    padding: 8px;
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (max-width:767px) {
+      margin-bottom: 24px;
+    }  
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  &__text {
+    display: inline-block;
+    height: 100%;
+    margin-bottom: 40px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.14;
+    color: #2c2c2c;
+  }
+
+  &__comment {
+    margin-bottom: 40px;
+
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+
+    color: #2c2c2c;
+  }
+
+  &__author {
+    display: flex;
+    text-align: center;
+    gap: 16px;
+  }
+
+  &__author-box {
+    text-align: start;
+    border-right: 1px solid var(--accent-dark-green);
+    padding-right: 15px;
+
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+    .reviews {
+      padding-top: 60px;
+      padding-bottom: 120px;
+  
+      background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+  
+  
+      background-image: url(../images/reviews-images/Rectangle719-tablet@1x.png);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/reviews-images/Rectangle719-tablet@2x.png);
+      }
+
+      &__group-comment {
+        display: flex;
+        gap: 32px;
+      }
+
+      &__item {
+        padding: 12px;
+       }
+
+       &__text {
+        line-height: 1.18;
+        margin-bottom: 32px;
+      }
+
+      &__comment {
+        font-size: 18px;
+        line-height: 1.17;
+      }
+
+      &__title {        
+        font-size: 42px;
+        line-height: 1.17;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      .reviews {
+        padding-top: 100px;
+        padding-bottom: 200px;
+        padding-left: 16px;
+        padding-right: 123px;
+    
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    
+        background-image: url(../images/reviews-images/Rectangle706-desk@1x.png);
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/reviews-images/Rectangle706-desk@2x.png);
+        }
+      &__group-comment {
+        gap: 139px;
+      }
+      &__item {
+        padding: 14px;
+      }
+      &__title {
+        margin-bottom: 20px;
+      }
+      &__text {
+        line-height: 1.19;
+      }
+    }
+  }
+
+}
