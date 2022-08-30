@@ -6,7 +6,7 @@
           <use href="/src/images/sprite-icons.svg#icon-logo"></use>
         </svg>
       </a>
-      <button class="mobile-menu__button open" type="button">
+      <button class="mobile-menu__button" type="button" data-mobile-open>
         <svg class="mobile-menu__icon" width="28px" height="28px">
           <use
             class="mobile-menu-burger"
@@ -41,31 +41,32 @@
       </div>
     </div>
   </div>
-  <div class="mobile-menu">
-    <button class="mobile-menu__button close" type="button">
-      <svg class="mobile-menu__icon" width="24px" height="24px">
+  <div class="mobile-menu-box">
+    <div class="mobile-menu is-open" data-mobile-menu>
+      <svg class="mobile-menu__icon--close" width="24px" height="24px">
         <use
           class="mobile-menu-close"
           href="/src/images/sprite-icons.svg#icon-close"
         ></use>
       </svg>
-    </button>
-    <ul class="mobile-menu-nav__list list">
-      <li class="item mobile-menu-nav__item">
-        <a class="link mobile-menu-nav__link" href="./index.html">Home</a>
-      </li>
-      <li class="item mobile-menu-nav__item">
-        <a class="link mobile-menu-nav__link" href="">About</a>
-      </li>
-      <li class="item mobile-menu-nav__item">
-        <a class="link mobile-menu-nav__link" href="">Service</a>
-      </li>
-      <li class="item mobile-menu-nav__item">
-        <a class="link mobile-menu-nav__link" href="">Menu</a>
-      </li>
-      <li class="item mobile-menu-nav__item">
-        <a class="link mobile-menu-nav__link" href="">Contact</a>
-      </li>
-    </ul>
+
+      <ul class="mobile-menu-nav__list list">
+        <li class="item mobile-menu-nav__item">
+          <a class="link mobile-menu-nav__link" href="#header">Home</a>
+        </li>
+        <li class="item mobile-menu-nav__item">
+          <a class="link mobile-menu-nav__link" href="#hero">About</a>
+        </li>
+        <li class="item mobile-menu-nav__item">
+          <a class="link mobile-menu-nav__link" href="#offerings">Service</a>
+        </li>
+        <li class="item mobile-menu-nav__item">
+          <a class="link mobile-menu-nav__link" href="#favourites">Menu</a>
+        </li>
+        <li class="item mobile-menu-nav__item">
+          <a class="link mobile-menu-nav__link" href="#subscribe">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
