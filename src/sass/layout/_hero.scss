@@ -11,12 +11,12 @@
   background-position: center;
   background-size: cover;
 
-  @media screen and (min-width: 768px) {
+  /*@media screen and (min-width: 768px) {
     height: 448px;
-  }
+  }*/
   @media screen and (min-width: 1280px) {
     padding-top: 159px;
-    min-height: 556px;
+    /* min-height: 556px;*/
     padding-bottom: 0;
   }
 }
@@ -61,11 +61,6 @@
   line-height: calc(38 / 28);
   margin-bottom: 28px;
   margin-top: 0;
-  /*
-  @media screen and (min-width: 380px) {
-    width: 280px;
-    padding-right: 14px;
-  }*/
 
   @media screen and (min-width: 768px) {
     margin-bottom: 44px;
@@ -76,7 +71,6 @@
   @media screen and (min-width: 1280px) {
     font-size: 48px;
     line-height: calc(58 / 48);
-    /*width: 100%;*/
     width: 502px;
   }
 }
@@ -137,14 +131,14 @@
 .hero-picture {
   position: absolute;
   top: 89px;
-  left: 376px;
+  left: 410px;
   border-radius: 50%;
   border: 14px solid #ffe550;
 
   @media screen and (min-width: 1280px) {
     border: 26px solid #ffe550;
     top: -145px;
-    left: 640px;
+    left: 670px;
   }
 
   &:hover,
@@ -162,55 +156,14 @@
   }
 
   @media screen and (min-width: 768px) {
-    height: 296px;
-    width: 296px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    height: 528px;
-    width: 528px;
-  }
-
-  /*
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: inherit;
-  top: 89px;
-  left: 368px;
-
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/hero/Ellipse\ 11hero-ellipse@1x.png);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/hero/Ellipse\ 11hero-ellipse@2x.png);
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/hero/Ellipse\ 12hero-ellipse@1x.png);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/hero/Ellipse\ 12hero-ellipse@2x.png);
-    }
-  }
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
     height: 320px;
     width: 320px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 580px;
     height: 580px;
-    top: -145px;
-    left: 640px;
-  }*/
+    width: 580px;
+  }
 
   &__img {
     text-align: center;
@@ -255,6 +208,7 @@
     &:hover,
     &:focus {
       fill: var(--accent-dark-green);
+      transition: var(--transition-time-func);
     }
   }
 }
@@ -263,7 +217,6 @@
   width: 100%;
   height: 100%;
   padding: 3px 13px 3px 4px;
-  fill: #2c2c2c;
 
   border-radius: 4px;
   background-color: var(--header-background-color);
@@ -271,6 +224,11 @@
   @media screen and (min-width: 1280px) {
     padding: 6px 13px;
   }
+}
+
+.hero__icon-left:hover {
+  fill: #7eb101;
+  transition: var(--transition-time-func);
 }
 
 .hero__button-right {
@@ -316,4 +274,10 @@
   @media screen and (min-width: 1280px) {
     padding: 6px 13px;
   }
+}
+
+.hero__icon-right:hover,
+.hero__icon-right:focus {
+  fill: #7eb101;
+  transition: var(--transition-time-func);
 }
