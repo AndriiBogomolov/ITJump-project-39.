@@ -52,6 +52,12 @@
   }
 }
 
+.offerings__text {
+  @media screen and (min-width: 1280px) {
+    margin-left: 90px;
+  }
+}
+
 .section-title {
   margin-bottom: 20px;
 
@@ -71,12 +77,15 @@
 }
 
 .offerings__title {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 28px;
+  }
   @media screen and (min-width: 768px) {
     max-width: 526px;
   }
 }
 
-.offerings__discription {
+.offerings__description {
   margin-bottom: 28px;
 
   font-size: 14px;
@@ -167,10 +176,12 @@
 }
 
 .offerings__link {
-  font-size: 14px;
-  line-height: 1.5;
-  text-decoration: none;
-  color: var(--secondary-text-color);
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+  }
 }
 
 .offerings__link_text {
