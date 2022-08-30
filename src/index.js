@@ -1,4 +1,3 @@
-
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),
@@ -13,6 +12,7 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
+
 (() => {
   const refs = {
 
@@ -34,5 +34,3 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
-
-
