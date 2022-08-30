@@ -7,6 +7,9 @@
   padding-left: 0;
   padding-right: 0;
   background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media screen and (min-width: 1280px) {
     padding-top: 159px;
@@ -204,7 +207,8 @@
     text-align: center;
     align-items: center;
 
-    position: absolute;
+    /*position: absolute;*/
+
     top: 0;
     left: 10;
 
@@ -217,13 +221,13 @@
 .hero__button-left {
   position: absolute;
 
-  left: 0;
+  left: 10px;
   top: 50%;
   transform: translate(-100%, -50%);
   border: none;
   padding: 0;
   cursor: pointer;
-  width: 34px;
+  width: 28px;
   height: 28px;
   transition: var(--transition-time-func);
 
@@ -249,7 +253,7 @@
 .hero__icon-left {
   width: 100%;
   height: 100%;
-  padding: 4px 9px;
+  padding: 3px 13px 3px 4px;
 
   border-radius: 4px;
   background-color: var(--header-background-color);
@@ -261,7 +265,7 @@
 
 .hero__button-right {
   position: absolute;
-  right: 0;
+  right: 7px;
   top: 50%;
   transform: translate(100%, -50%);
 
@@ -294,7 +298,7 @@
 .hero__icon-right {
   width: 100%;
   height: 100%;
-  padding: 4px 9px;
+  padding: 3px 4px 3px 13px;
   border-radius: 4px;
   background-color: var(--header-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
