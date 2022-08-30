@@ -255,6 +255,7 @@
     &:hover,
     &:focus {
       fill: var(--accent-dark-green);
+      transition: var(--transition-time-func);
     }
   }
 }
@@ -263,7 +264,6 @@
   width: 100%;
   height: 100%;
   padding: 3px 13px 3px 4px;
-  fill: #2c2c2c;
 
   border-radius: 4px;
   background-color: var(--header-background-color);
@@ -271,6 +271,11 @@
   @media screen and (min-width: 1280px) {
     padding: 6px 13px;
   }
+}
+
+.hero__icon-left:hover {
+  fill: #7eb101;
+  transition: var(--transition-time-func);
 }
 
 .hero__button-right {
@@ -316,4 +321,10 @@
   @media screen and (min-width: 1280px) {
     padding: 6px 13px;
   }
+}
+
+.hero__icon-right:hover,
+.hero__icon-right:focus {
+  fill: #7eb101;
+  transition: var(--transition-time-func);
 }
