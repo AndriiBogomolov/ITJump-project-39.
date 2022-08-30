@@ -13,6 +13,7 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
+
 (() => {
   const refs = {
 
@@ -34,5 +35,3 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
-
-
