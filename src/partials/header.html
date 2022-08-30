@@ -6,7 +6,11 @@
           <use href="/src/images/sprite-icons.svg#icon-logo"></use>
         </svg>
       </a>
-      <button class="mobile-menu__button" type="button" data-mobile-open>
+      <button
+        class="mobile-menu__button is-open"
+        type="button"
+        data-mobile-open
+      >
         <svg class="mobile-menu__icon" width="28px" height="28px">
           <use
             class="mobile-menu-burger"
@@ -16,7 +20,7 @@
       </button>
 
       <div class="menu">
-        <nav class="site-nav">
+        <nav class="header-site-nav">
           <ul class="site-nav list">
             <li class="item site-nav__item">
               <a class="link site-nav__link--current" href="./index.html"
@@ -42,7 +46,7 @@
     </div>
   </div>
   <div class="mobile-menu-box">
-    <div class="mobile-menu is-open" data-mobile-menu>
+    <div class="mobile-menu is-hidden" data-mobile-menu>
       <svg class="mobile-menu__icon--close" width="24px" height="24px">
         <use
           class="mobile-menu-close"

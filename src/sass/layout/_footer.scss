@@ -40,13 +40,24 @@
   }
 
   &-figuration {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 80px;
+    display: block;
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 80px;
+    }
   }
   &-nav {
     display: flex;
-    justify-content: space-between;
+    gap: 81px;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      justify-content: space-between;
+      align-items: center;
+      gap: 148px;
+    }
   }
   &__button {
     width: 103px;
@@ -69,22 +80,33 @@
 }
 
 .footer-inform {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__list {
     display: flex;
     gap: 20px;
   }
-  &__itam {
-  }
+
   &__link {
     color: var(--accent-dark-green);
     font-weight: 400;
-    font-size: 12px;
+
     line-height: 1.17;
+    font-size: 10px;
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+    }
   }
   &__copyright {
+    @media screen and (max-width: 767px) {
+      margin-top: 40px;
+      font-size: 10px;
+    }
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 12px;
@@ -92,9 +114,21 @@
   }
 }
 
-.subscribe__privacy {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  margin-top: 12px;
+.subscribe {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+  margin-bottom: 100px;
+
+  &__privacy {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    margin-top: 12px;
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+      font-size: 10px;
+    }
+  }
 }
