@@ -8,22 +8,22 @@
   border: none;
   border-radius: 30px;
   background-color: var(--accent-green-color);
+
   cursor: pointer;
+}
+
+.header__button:focus,
+.header__button:hover {
+  background-color: var(--green-color);
 }
 .mobile-menu__button {
   border: none;
+  fill: var(--accent-green-color);
   background-color: var(---header-background-color);
   width: 24px;
   height: 24px;
   margin-left: auto;
   @media screen and (min-width: 768px) {
     display: none;
-  }
-
-  &.close {
-    position: absolute;
-    padding: 0px;
-    top: 4px;
-    right: 4px;
   }
 }
