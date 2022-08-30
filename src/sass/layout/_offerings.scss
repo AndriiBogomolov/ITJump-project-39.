@@ -138,11 +138,11 @@
 }
 
 .offerings__item--rocket::before {
-  background-image: url('../images/sprite-icons.svg#rocket');
+  background-image: url('../images/offerings/rocket.svg');
 }
 
 .offerings__item--touch::before {
-  background-image: url('../images/sprite-icons.svg#touch');
+  background-image: url('../images/offerings/touch.svg');
 }
 
 .offerings__subtitle {
@@ -181,6 +181,10 @@
     line-height: 1.5;
     text-decoration: none;
     color: var(--secondary-text-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
