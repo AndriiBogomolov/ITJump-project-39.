@@ -133,3 +133,11 @@
     border-radius: 30px;
   }
 }
+
+input:valid {
+  border: 1px solid var(--accent-dark-green);
+}
+
+input:invalid {
+  border: 1px solid #ff705d;
+}
