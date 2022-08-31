@@ -135,19 +135,15 @@
   font-size: 13px;
   text-align: calc(20 / 13);
 
-  /*&:hover,
+  &:hover,
   &:focus {
     background-color: var(--accent-green-color);
     transition: var(--transition-time-func);
-  }*/
+  }
 
   &:disabled {
-    border: 2px solid var(--accent-dark-green);
+    border: 2px solid var(--error-color);
     border-radius: 30px;
-  }
-  &:active,
-  &:hover {
-    background-color: var(--accent-green-color);
   }
 }
 
@@ -156,9 +152,5 @@ input:valid {
 }
 
 input:invalid {
-  border: 1px solid var(--error-color);
-}
-
-button:disabled input:invalid + button:disabled {
   border: 1px solid var(--error-color);
 }
