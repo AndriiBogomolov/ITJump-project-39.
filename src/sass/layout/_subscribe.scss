@@ -8,6 +8,7 @@
         }
     
         @media screen and (min-width: 1280px) {
+           
             padding-top: 0;
             padding-bottom: 100px;
         }
@@ -118,8 +119,8 @@
         }
                 @media screen and (min-width: 1280px) {
                     top: 50%;
-                    left: calc(100% - 23px);
-                    transform: translate(0, -62%);
+                    left: calc(100% - 0px);
+                    transform: translate(0, -50%);
                 }
 }
 
@@ -168,6 +169,10 @@
     }
 }
 
+.subscribe__input:placeholder-shown {
+    border-color: var(--yellow-color);
+  }
+  
 .error {
     position: absolute;
     top: 100%;
