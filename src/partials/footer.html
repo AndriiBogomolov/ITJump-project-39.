@@ -26,14 +26,14 @@
           </li>
         </ul>
       </div>
-      <div class="subscribe">
+      <div class="footer-subscribe">
         <form class="form-subscribe">
           <div class="form-subscribe__name">
-            <label for="footer-subscribe" class="form-subscribe__label"
+            <label for="footer-subscribe-input" class="form-subscribe__label"
               >Subscribe</label
             >
             <input
-              id="footer-subscribe"
+              id="footer-subscribe-input"
               type="email"
               name="email"
               class="form-subscribe__fild"
@@ -42,11 +42,19 @@
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             />
           </div>
+          <span class="label__error">
+            <svg class="error-icon">
+              <use href="./images/sprite-icons.svg#error"></use>
+            </svg>
+            <span class="error-message">
+              Not a valid email address (example@email.com)
+            </span>
+          </span>
 
           <button class="button footer__button" type="submit">Subscribe</button>
         </form>
 
-        <p class="subscribe__privacy">
+        <p class="footer-subscribe__privacy">
           By subscribing you agree to with our
           <a class="link footer-inform__link" href="">Privacy Policy</a>
         </p>
