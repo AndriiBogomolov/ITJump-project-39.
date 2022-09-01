@@ -175,14 +175,14 @@
 }
 
 .offerings__link {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1279px) {
     font-size: 14px;
     line-height: 1.5;
     text-decoration: none;
     color: var(--secondary-text-color);
   }
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
