@@ -119,8 +119,6 @@
       .reviews {
         padding-top: 100px;
         padding-bottom: 200px;
-        padding-left: 16px;
-        padding-right: 123px;
     
         background-size: cover;
         background-position: bottom;
@@ -133,10 +131,6 @@
           background-image: url(../images/reviews-images/Rectangle706-desk@2x.png);
         }
 
-        & .container {
-          padding-left: 0;
-          padding-right: 0;
-        }
       &__group-comment {
         gap: 139px;
       }
