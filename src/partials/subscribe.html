@@ -1,21 +1,45 @@
 <section class="subscribe" id="subscribe">
-  <div class="container subscribe__container">
-    <div class="subscribe__wrap">
-      <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
-      <p class="subscribe__description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique.
-      </p>
-      <form class="subscribe__form">
-        <label class="subscribe__label" for="subscribe-email">
-          <input
-            class="subscribe__input"
-            type="email"
-            name="email"
-            id="subscribe-email"
-            placeholder="Enter your email"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+    <div class="container subscribe__container">
+      <div class="subscribe__wrap">
+        <h2 class="subscribe__title">
+          Subscribe To Get Special Offers
+        </h2>
+        <p class="subscribe__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+        <form class="subscribe__form">
+          <label class="subscribe__label" for="subscribe-email">
+            <input
+              class="subscribe__input"
+              type="email"
+              name="email"
+              id="subscribe-email"
+              placeholder="Enter your email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            />
+            <div class="error">
+              <svg class="error-icon">
+                <use href="./images/sprite-icons.svg#error"></use>
+              </svg>
+              <span class="error-message">
+                Not a valid email address (example@email.com)
+              </span>
+            </div>
+          </label>
+  
+          <button class="subscribe__button" type="submit">Subscribe</button>
+        </form>
+        <picture>
+          <source
+            srcset="
+              ./images/subscribe/banan-desk@1x.webp 1x,
+              ./images/subscribe/banan-desk@2x.webp 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/webp"
+
           />
           <div class="error">
             <svg class="error-icon">

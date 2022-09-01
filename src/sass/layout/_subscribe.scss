@@ -9,15 +9,19 @@
 
   @media screen and (min-width: 1280px) {
     padding-top: 0;
-    padding-bottom: 100px;
+    padding-bottom: 36px;
+    margin-bottom: 64px;
   }
 
   &__container {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+
     @media screen and (min-width: 1280px) {
       flex-direction: row;
+      padding-left: 16px;
+      padding-right: 17px;
     }
   }
 
@@ -112,13 +116,13 @@
   transform: translate(-50%, calc(-100% - 17px));
 
   @media screen and (min-width: 768px) {
-    left: calc(100% - 32px);
+    left: calc(100% + 10px);
     transform: translate(-100%, calc(-100% - 20px));
   }
   @media screen and (min-width: 1280px) {
     top: 50%;
-    left: calc(100% - 23px);
-    transform: translate(0, -50%);
+    left: 100%;
+    transform: translate(0, -55%);
   }
 }
 
@@ -163,6 +167,10 @@
   &:not(:placeholder-shown):required:valid {
     border-color: var(--accent-dark-green);
   }
+}
+
+.subscribe__input:placeholder-shown {
+  border-color: var(--yellow-color);
 }
 
 .error {

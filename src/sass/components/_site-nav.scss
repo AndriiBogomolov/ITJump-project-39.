@@ -1,10 +1,18 @@
 .site-nav {
-  gap: 20px;
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 28px;
   }
-
+  &__item {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__item:last-child {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0px;
+    }
+  }
   &__link {
     text-decoration: none;
     font-size: 14px;
