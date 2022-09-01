@@ -1,7 +1,7 @@
 .reviews {
     padding-top: 60px;
     padding-bottom: 60px;
-
+    
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -13,6 +13,7 @@
     (min-resolution: 2dppx) {
       background-image: url('../images/reviews-images/Rectangle701-mobile@2x.png');
     }
+
 
   &__item{
     background: #FFFFFF;
@@ -46,7 +47,12 @@
   }
 
   &__comment {
+
+    margin-top: 28 px;
     margin-bottom: 40px;
+    width: 264px;
+    height: 76px;
+    margin-top: 28px;
 
     display: block;
     font-family: 'Roboto';
@@ -70,7 +76,6 @@
     padding-right: 15px;
 
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -107,6 +112,9 @@
       &__comment {
         font-size: 18px;
         line-height: 1.17;
+        width: 312px;
+        height: 84px;
+        margin-top: 28px;
       }
 
       &__title {        
@@ -130,6 +138,17 @@
           (min-resolution: 2dppx) {
           background-image: url(../images/reviews-images/Rectangle706-desk@2x.png);
         }
+
+        &__comment {
+        font-size: 18px;
+        line-height: 1.17;
+        width: 473px;
+        height: 63px;
+        margin-top: 28px;
+      }
+
+
+
 
       &__group-comment {
         gap: 139px;
