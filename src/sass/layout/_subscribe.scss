@@ -1,6 +1,6 @@
 .subscribe {
   padding-top: 52px;
-  // padding-bottom: 60px;
+  padding-bottom: 60px;
   
   @media screen and (min-width: 768px) {
     padding-top: 82px;
@@ -12,7 +12,7 @@
         max-width: 656px;
 
         @media screen and (min-width: 1280px) {
-    padding-top: 0;
+          padding-top: 0;
     // padding-bottom: 36px;
     // margin-bottom: 64px;
   }
