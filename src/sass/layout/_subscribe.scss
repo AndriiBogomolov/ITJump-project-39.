@@ -6,22 +6,10 @@
     padding-top: 82px;
     padding-bottom: 100px;
   }
+    &__wrap {
+        position: relative;
 
-  @media screen and (min-width: 1280px) {
-    padding-top: 0;
-    padding-bottom: 36px;
-    margin-bottom: 64px;
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-
-    @media screen and (min-width: 1280px) {
-      flex-direction: row;
-      padding-left: 16px;
-      padding-right: 17px;
+        max-width: 656px;
     }
   }
 
@@ -46,11 +34,16 @@
   &__description {
     margin-bottom: 40px;
 
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--primary-text-color);
-    @media screen and (min-width: 768px) {
-      margin-bottom: 24px;
+        font-size: 14px;
+        line-height: 1.14;
+        color: var(--primary-text-color);
+        
+        @media screen and (min-width: 768px) {
+            margin-bottom: 24px;
+
+            font-size: 16px;
+            line-height: 1.5;
+        }
     }
   }
 
