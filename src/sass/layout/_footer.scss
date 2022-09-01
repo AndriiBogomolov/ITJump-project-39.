@@ -61,8 +61,11 @@
     gap: 81px;
     margin-bottom: 40px;
     @media screen and (min-width: 768px) {
-      justify-content: space-between;
       align-items: center;
+      gap: 114px;
+    }
+    @media screen and (min-width: 1280px) {
+      justify-content: space-between;
       gap: 148px;
     }
   }
@@ -79,6 +82,9 @@
     text-align: center;
 
     cursor: pointer;
+    @media screen and (max-width: 767px) {
+      margin-left: 176px;
+    }
   }
   &__button:hover,
   &__button:focus {
@@ -87,7 +93,7 @@
 }
 
 .footer-inform {
-  justify-content: center;
+  text-align: center;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -97,6 +103,7 @@
   &__list {
     display: flex;
     gap: 20px;
+    justify-content: center;
   }
 
   &__link {
